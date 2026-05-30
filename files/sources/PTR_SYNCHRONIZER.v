@@ -14,12 +14,12 @@ module PTR_SYNCHRONIZER
 )
 (
     // System signals
-    input wire wrclk, // w or r clk
-    input wire wrrst_n, // w or r rst_n
+    input wire wrclk, // write or read clk domain
+    input wire wrrst_n, // write or read rst_n domain
     
     // Pointers
-    input  wire [PTR_WDT - 1 : 0] wrptr, // w or r ptr
-    output reg  [PTR_WDT - 1 : 0] wrptr_sync // w or r ptr_sync
+    input  wire [PTR_WDT - 1 : 0] wrptr, // write or read ptr
+    output reg  [PTR_WDT - 1 : 0] wrptr_sync // write or read ptr_sync
 );
     
     reg [PTR_WDT - 1 : 0] wrptr_reg;
