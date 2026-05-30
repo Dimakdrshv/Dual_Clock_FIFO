@@ -13,8 +13,8 @@ module GRAY_TO_BINARY
     parameter PTR_WDT = 3
 )
 (
-    input  wire [PTR_WDT - 1 : 0] wrptr_g,
-    output wire [PTR_WDT - 1 : 0] wrptr_b
+    input  wire [PTR_WDT - 1 : 0] wrptr_g, // write or read ptr **gray code
+    output wire [PTR_WDT - 1 : 0] wrptr_b  // write or read ptr **binary
 );
 
 
