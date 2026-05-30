@@ -18,11 +18,11 @@ module PTR_SYNCHRONIZER
     input wire wrrst_n, // write or read rst_n domain
     
     // Pointers
-    input  wire [PTR_WDT - 1 : 0] wrptr, // write or read ptr
-    output reg  [PTR_WDT - 1 : 0] wrptr_sync // write or read ptr_sync
+    input  wire [PTR_WDT : 0] wrptr, // write or read ptr
+    output reg  [PTR_WDT : 0] wrptr_sync // write or read ptr_sync
 );
     
-    reg [PTR_WDT - 1 : 0] wrptr_reg;
+    reg [PTR_WDT : 0] wrptr_reg;
 
     always @(posedge wrclk or negedge wrrst_n) begin
         if (!wrrst_n) begin
