@@ -17,6 +17,7 @@
 # Используемые ресурсы
 
 Based on materials from VLSI Verify — [Asynchronous FIFO](https://vlsiverify.com/verilog/verilog-codes/asynchronous-fifo/).
+
 Used for non-commercial educational purposes.
 
 # Лицензия
