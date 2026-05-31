@@ -4,11 +4,9 @@
 // File Path: D:/VivadoProjects/Dual_Clock_FIFO/files/sources/WR_PTR_HANDLER.v
 // Author: Kudryashov D.S.
 // Created On: 2026-05-25 23:36:23
-// Description: 
+// Description: [wrap_bit][addr] - ptr
 //===========================================================
 
-// [wrap_bit][addr] - ptr
-// fifo depth must be 2^n for gray code
 
 module WR_PTR_HANDLER
 #(
