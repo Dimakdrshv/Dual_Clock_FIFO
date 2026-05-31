@@ -29,7 +29,7 @@ module WR_PTR_HANDLER
     output reg almost_full // almost full flag 
 );
     
-    localparam SIZE = {(PTR_WDT){1'b1}};
+    localparam [PTR_WDT : 0] SIZE = {(PTR_WDT){1'b1}} + 1'b1;
     
     wire [PTR_WDT : 0] rptr_b_sync; // binary read ptr
     

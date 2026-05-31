@@ -91,7 +91,7 @@ module RD_PTR_HANDLER
         if (!rrst_n) begin
             almost_empty <= 1'b0;
         end else begin
-            almost_empty <= 1'b1;
+            almost_empty <= almost_empty_next;
         end
     end
             
