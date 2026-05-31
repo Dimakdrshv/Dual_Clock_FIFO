@@ -82,7 +82,7 @@ module WR_PTR_HANDLER
         if (!wrst_n) begin
             wptr_b <= 'b0;
         end else begin
-            if (w_en) begin
+            if (w_en && !full) begin
                 wptr_b <= wptr_b_next;
             end
         end
